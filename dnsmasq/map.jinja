@@ -5,14 +5,14 @@
 {%- if source_engine == 'git' %}
 Debian:
   pkgs:
-  - python-psycopg2
+  - dnsmasq
   dir:
     base: /srv/dnsmasq/venv
     home: /var/lib/dnsmasq
     workspace: /srv/dnsmasq/workspace
 RedHat:
   pkgs:
-  - python-psycopg2
+  - dnsmasq
   dir:
     base: /srv/dnsmasq/venv
     home: /var/lib/dnsmasq
