@@ -11,4 +11,11 @@ dnsmasq_server_packages:
   - template: jinja
   - require:
     - pkg: dnsmasq_server_packages
+
+dnsmasq_server_service:
+  service_running:
+    - enable:true
+    - name: 
+    - watch:
+      - file: /etc/dnsmasq.conf
 {%- endif %}
