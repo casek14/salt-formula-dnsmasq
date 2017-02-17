@@ -13,9 +13,10 @@ dnsmasq_server_packages:
     - pkg: dnsmasq_server_packages
 
 dnsmasq_server_service:
-  service_running:
-    - enable:true
+  service.running:
+    - enable: true
     - name: 
+       - dnsmasq
     - watch:
       - file: /etc/dnsmasq.conf
 {%- endif %}
